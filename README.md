@@ -25,7 +25,7 @@ A modern, responsive bakery website built with React, TypeScript, Vite, and Tail
 1. Clone the repository:
    ```bash
    git clone https://github.com/Cylvenda/bakery.git
-   cd bakery-website
+   cd bakery
    ```
 
 2. Install dependencies:
