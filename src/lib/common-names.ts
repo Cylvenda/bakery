@@ -1,0 +1,1 @@
+export const COMPANYNAME: string = "Wema Bakery"
