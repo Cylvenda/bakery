@@ -4,7 +4,7 @@ const HeroSection = () => {
      return (
           <section
                id="home"
-               className="bg-[url(hero.png)] w-full bg-cover bg-center md:pt-28"
+               className="bg-[url(/hero.png)] w-full bg-cover bg-center md:pt-28"
           >
                <div className="h-200 md:h-screen flex items-end pb-10 md:items-center text-primary-foreground">
                     <div>

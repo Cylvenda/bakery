@@ -55,7 +55,7 @@ const ContactForm = () => {
      })
 
      return (
-          <Card className="w-full rounded-none border-2 border-primary border-dashed md:rounded">
+          <Card id="orders" className="w-full rounded-none border-2 border-primary border-dashed md:rounded">
                <CardHeader>
                     <CardTitle>Contact Wema Bakery</CardTitle>
                     <CardDescription>

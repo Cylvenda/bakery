@@ -10,7 +10,7 @@ export const navItems = [
      },
      {
           title: "special orders",
-          link: "#contacts"
+          link: "#orders"
      },
      {
           title: "about",
