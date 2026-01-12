@@ -22,54 +22,56 @@ const Footer = () => {
 
      return (
           <footer >
-               <Card className="rounded-none border-none bg-[url('/bg.png')] text-primary w-full  bg-cover bg-center">
-                    <CardContent className="max-w-7xl mx-auto px-3 md:px-5 py-3 md:py-12">
+               <Card className=" -mt-6 md:mt-0 md:p-5 rounded-none border-none bg-primary w-full bg-[url('/bg.png')] bg-cover bg-center text-white">
+                    <CardContent className="py-15 w-full">
                          {/* Top Section */}
-                         <div className="grid gap-8 md:grid-cols-4">
+                         <div className="grid gap-10 md:grid-cols-3">
                               {/* Brand */}
                               <div className="space-y-3">
                                    <h1 className="text-xl font-bold">{COMPANYNAME}</h1>
-                                   <p className="text-sm ">
+                                   <p className="text-sm w-full">
                                         We create freshly baked bakery products using carefully selected ingredients and skilled craftsmanship.
                                    </p>
                               </div>
 
-                              {/* Quick Links */}
-                              <div>
-                                   <h2 className="mb-4 text-lg font-semibold">Quick Links</h2>
-                                   <ul className="space-y-2 text-sm">
-                                        {links.map((link) => (
-                                             <li key={link.link}>
-                                                  <a href={link.link}
-                                                       className="hover:underline capitalize"
-                                                  >
-                                                       {link.title}
-                                                  </a>
-                                             </li>
-                                        ))}
-                                   </ul>
-                              </div>
+                              <div className="flex justify-between gap-10">
+                                   {/* Quick Links */}
+                                   <div>
+                                        <h2 className="mb-4 text-lg font-semibold">Quick Links</h2>
+                                        <ul className="space-y-2 text-sm">
+                                             {links.map((link) => (
+                                                  <li key={link.link}>
+                                                       <a href={link.link}
+                                                            className="hover:underline capitalize"
+                                                       >
+                                                            {link.title}
+                                                       </a>
+                                                  </li>
+                                             ))}
+                                        </ul>
+                                   </div>
 
-                              {/* Company */}
-                              <div>
-                                   <h2 className="mb-4 text-lg font-semibold">Company</h2>
-                                   <ul className="space-y-2 text-sm">
-                                        {companyLinks.map((company) => (
-                                             <li key={company.value}>
-                                                  <Link
-                                                       to={company.location}
-                                                       className=" hover:underline"
-                                                  >
-                                                       {company.value}
-                                                  </Link>
-                                             </li>
-                                        ))}
-                                   </ul>
+                                   {/* Company */}
+                                   <div>
+                                        <h2 className="mb-4 text-lg font-semibold">Company</h2>
+                                        <ul className="space-y-2 text-sm">
+                                             {companyLinks.map((company) => (
+                                                  <li key={company.value}>
+                                                       <Link
+                                                            to={company.location}
+                                                            className=" hover:underline"
+                                                       >
+                                                            {company.value}
+                                                       </Link>
+                                                  </li>
+                                             ))}
+                                        </ul>
+                                   </div>
                               </div>
 
                               {/*social Medias*/}
-                              <div >
-                                   <h2 className="mb-4 text-lg font-semibold">Social</h2>
+                              <div className="md:ml-15">
+                                   <h2 className="mb-4 text-lg font-semibold">Social Medias</h2>
                                    <div className="flex flex-row justify-start gap-3">
                                         <LinkedinIcon />
                                         <YoutubeIcon />
@@ -79,7 +81,7 @@ const Footer = () => {
                               </div>
                          </div>
 
-                         <Separator className="mt-5 bg-primary-foreground" />
+                         <Separator className="mt-4 md:mt-15 bg-primary-foreground" />
 
                          {/* Bottom Bar */}
                          <div className="pt-5  flex flex-col items-center justify-between gap-4 text-sm md:flex-row font-bold">
@@ -87,7 +89,7 @@ const Footer = () => {
                                    © {new Date().getFullYear() + " " + COMPANYNAME}. All rights reserved.
                               </p>
                               <div className="flex gap-4 ">
-                                   <Link to="#" title="Cylvenda-Lts">Developed by <span className="underline">Cylvenda-Lts</span></Link>
+                                   <Link to="#" title="Cylvenda">Developed by Cylvenda</Link>
                               </div>
                          </div>
                     </CardContent>

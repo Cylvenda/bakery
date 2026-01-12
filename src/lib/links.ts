@@ -10,14 +10,14 @@ export const navItems = [
      },
      {
           title: "special orders",
-          link: "#special-orders"
+          link: "#contacts"
      },
      {
           title: "about",
           link: "#about"
      },
      {
-          title: "contact",
-          link: "#contact"
+          title: "contacts",
+          link: "#contacts"
      },
 ];
