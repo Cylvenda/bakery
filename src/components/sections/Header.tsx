@@ -20,7 +20,7 @@ const Header = () => {
                          <img
                               src="/hero.png"
                               alt="logo"
-                              className="rounded-full h-14 w-15"
+                              className="rounded-full h-10 :mdh-14 w-10 md:w-15"
                          />
                          <h1 className="sansita-text text-2xl  md:text-3xl font-bold font-heading cursor-pointer ">{COMPANYNAME}</h1>
                     </div>
